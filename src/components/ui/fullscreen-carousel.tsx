@@ -3,7 +3,7 @@ import {
   CarouselContent,
   CarouselNext,
   CarouselPrevious,
-} from './ui/carousel';
+} from './carousel';
 
 interface FullscreenCarouselProps {
   children: React.ReactNode;
