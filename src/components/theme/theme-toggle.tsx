@@ -1,4 +1,4 @@
-import { useTheme } from '@/components/theme-provider';
+import { useTheme } from '@/components/theme/theme-provider';
 import { Switch } from '@/components/ui/switch';
 import { useState } from 'react';
 
