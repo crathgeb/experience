@@ -16,7 +16,7 @@ export function Slide1() {
             <div className="text-right mb-4">
               <h1 className="text-6xl font-bold mb-2">Christopher Rathgeb</h1>
               <p className="text-xl text-muted-foreground">
-                TUX Engineer - Crossnokaye Presentation
+                TUX Engineer - CrossnoKaye Presentation
               </p>
             </div>
             <img
