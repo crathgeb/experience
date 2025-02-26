@@ -1,4 +1,4 @@
-import { SlideCard } from '@/components/ui/slide-card';
+import { SlideCard } from '@/components/ui/slide';
 import bigBrained from '@/assets/images/big_brained_transparent.png';
 import ckLogo from '@/assets/images/ck_logo.png';
 

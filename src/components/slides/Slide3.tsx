@@ -1,6 +1,6 @@
-import { SlideCard } from '@/components/ui/slide-card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ImageDialog } from '@/components/ui/image-dialog';
+import { SlideHeader, SlideBody, SlideCard } from '@/components/ui/slide';
 
 // Import images
 import zippzippeqImage from '@/assets/images/work/zippzippeq.gif';
@@ -77,12 +77,8 @@ const experiences = [
 export function Slide3() {
   return (
     <SlideCard>
-      <div className="absolute top-8 left-8 right-8">
-        <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">
-          Work Experience
-        </h2>
-      </div>
-      <div className="absolute inset-8 flex items-center justify-center overflow-scroll mt-28 sm:mt-16 hide-scrollbar">
+      <SlideHeader title={'Work Experience'} />
+      <SlideBody className={'mt-28 sm:mt-16'}>
         <div className="gap-3 sm:gap-4 w-full h-full p-2 sm:p-4">
           <Tabs
             defaultValue={experiences[0].id}
@@ -158,21 +154,7 @@ export function Slide3() {
             </div>
           </Tabs>
         </div>
-      </div>
+      </SlideBody>
     </SlideCard>
-
-    // <SlideCard>
-    //   <div className="absolute top-8 left-8 right-8">
-    //     <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">
-    //       Work Experience
-    //     </h2>
-    //   </div>
-
-    //   <div className="absolute inset-8 flex items-center justify-center overflow-scroll mt-24 sm:mt-16 hide-scrollbar">
-    //     <div className="w-full max-w-4xl p-2 sm:p-4">
-
-    //     </div>
-    //   </div>
-    // </SlideCard>
   );
 }
