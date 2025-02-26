@@ -27,7 +27,7 @@ export function ImageDialog({ src, alt, thumbnail = true }: ImageDialogProps) {
           <img
             src={src}
             alt={alt}
-            className="cursor-pointer hover:opacity-80 transition-opacity w-4/5 h-4/5 object-contain"
+            className="cursor-pointer hover:opacity-80 transition-opacity w-4/5 h-4/5 object-cover"
           />
         </div>
       </DialogTrigger>
