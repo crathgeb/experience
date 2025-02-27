@@ -10,7 +10,7 @@ const LazyMobileProjects = withLazyLoad(MobileProjects, { delay: 150 });
 export function NotableProjectsSlide() {
   return (
     <SlideCard>
-      <SlideHeader title={'Notable Projects'} />
+      <SlideHeader title={'Current Projects'} />
       <SlideBody className={'sm:mt-16'}>
         <div className="w-full">
           <div className="hidden md:block">
