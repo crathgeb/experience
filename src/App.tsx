@@ -10,6 +10,7 @@ import { FullPageImageSlide } from '@/components/slides/FullPageImageSlide';
 import { WhyCrossnoKayeSlide } from './components/slides/WhyCrossnoKayeSlide';
 import { QuestionsSlide } from '@/components/slides/QuestionsSlide';
 import { ThankYouSlide } from '@/components/slides/ThankYouSlide';
+import { NotableProjectsSlide } from './components/slides/NotableProjectsSlide';
 
 const projectSlides = curemint();
 
@@ -24,6 +25,7 @@ function App() {
           <WelcomeSlide />
           <AboutMeSlide />
           <WorkExperienceSlide />
+          <NotableProjectsSlide />
           {projectSlides?.map((item) => (
             <FullPageImageSlide key={item.src} image={item} />
           ))}
