@@ -3,10 +3,9 @@ import { ImageDialog } from '@/components/ui/image-dialog';
 import { aboutMe } from '@/data/images';
 import { ImageInfo } from '../ui/photo-card';
 import { ImageGallery, ImageGalleryCard } from '@/components/ui/image-gallary';
+const images: ImageInfo[] = aboutMe();
 
 export function Slide2() {
-  const images: ImageInfo[] = aboutMe();
-
   return (
     <SlideCard>
       <SlideHeader
