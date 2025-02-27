@@ -44,12 +44,12 @@ export function ThankYouSlide() {
             <p className="text-sm text-muted-foreground">
               View the code for this presentation at{' '}
               <a
-                href="https://github.com/crathgeb/tbd"
+                href="https://github.com/crathgeb/experience"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary"
               >
-                github.com/crathgeb/tbd
+                github.com/crathgeb/experience
               </a>
             </p>
           </div>

@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 interface ImageDialogProps {
   src: string;
   alt: string;
-  thumbnail?: boolean;
   loading?: 'lazy' | 'eager';
   className?: string;
   style?: React.CSSProperties;
@@ -14,7 +13,6 @@ interface ImageDialogProps {
 export function ImageDialog({
   src,
   alt,
-  thumbnail = true,
   loading,
   className,
   style,
