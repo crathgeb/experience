@@ -5,6 +5,16 @@ import petsafeImage from '@/assets/images/work/petsafe.png';
 import digitovaImage from '@/assets/images/work/phytofacts.png';
 import curemintImage from '@/assets/images/work/curemint.png';
 
+export interface Experience {
+  id: string;
+  title: string;
+  subtitle: string;
+  role: string;
+  period: string;
+  description: string;
+  image: string;
+}
+
 export const experiences = [
   {
     id: 'zippzippeq',
