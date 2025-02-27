@@ -18,3 +18,13 @@ export function aboutMe(): ImageInfo[] {
 
   return loadImages(imports, 'About Me');
 }
+
+export function curemint(): ImageInfo[] {
+  const imports = import.meta.glob(
+    '@/assets/images/curemint/*.{png,jpg,jpeg,svg}',
+    {
+      eager: true,
+    }
+  );
+  return loadImages(imports, 'CureMint');
+}

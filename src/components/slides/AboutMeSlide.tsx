@@ -6,7 +6,7 @@ import { ImageGallery, ImageGalleryCard } from '@/components/ui/image-gallary';
 
 const images: ImageInfo[] = aboutMe();
 
-export function Slide2() {
+export function AboutMeSlide() {
   return (
     <SlideCard>
       <SlideHeader

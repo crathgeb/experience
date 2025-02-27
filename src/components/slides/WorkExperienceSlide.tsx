@@ -12,7 +12,7 @@ import {
 } from '../ui/vertical-tabs';
 import { experiences } from '@/data/experiences';
 
-export function Slide3() {
+export function WorkExperienceSlide() {
   return (
     <SlideCard>
       <SlideHeader title={'Work Experience'} />

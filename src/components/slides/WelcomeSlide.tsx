@@ -2,7 +2,7 @@ import { SlideCard } from '@/components/ui/slide';
 import bigBrained from '@/assets/images/big_brained_transparent.png';
 import ckLogo from '@/assets/images/ck_logo.png';
 
-export function Slide1() {
+export function WelcomeSlide() {
   return (
     <SlideCard>
       <div className="absolute inset-8 inset-b-0">

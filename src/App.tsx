@@ -1,17 +1,14 @@
-import './App.css';
-import { ThemeProvider } from './components/theme/theme-provider';
-import { ThemeToggle } from './components/theme/theme-toggle';
-import { FullscreenCarousel } from './components/ui/fullscreen-carousel';
-import { Slide1 } from './components/slides/Slide1';
-import { Slide2 } from './components/slides/Slide2';
-import { Slide3 } from './components/slides/Slide3';
-import { SlideCard } from './components/ui/slide';
+import '@/App.css';
+import { ThemeProvider } from '@/components/theme/theme-provider';
+import { ThemeToggle } from '@/components/theme/theme-toggle';
+import { FullscreenCarousel } from '@/components/ui/fullscreen-carousel';
+import { WelcomeSlide } from '@/components/slides/WelcomeSlide';
+import { AboutMeSlide } from '@/components/slides/AboutMeSlide';
+import { WorkExperienceSlide } from '@/components/slides/WorkExperienceSlide';
+import { curemint } from '@/data/images';
+import { FullPageImageSlide } from '@/components/slides/FullPageImageSlide';
 
-import curemint1 from '@/assets/images/curemint/curemint1.png';
-import curemint2 from '@/assets/images/curemint/curemint2.png';
-import curemint3 from '@/assets/images/curemint/curemint3.png';
-
-const projectSlides = [curemint1, curemint2, curemint3];
+const projectSlides = curemint();
 
 function App() {
   return (
@@ -21,14 +18,13 @@ function App() {
           <ThemeToggle />
         </div>
         <FullscreenCarousel>
-          <Slide1 />
-          <Slide2 />
-          <Slide3 />
+          <WelcomeSlide />
+          <AboutMeSlide />
+          <WorkExperienceSlide />
           {projectSlides?.map((item) => (
-            <SlideCard key={item}>
-              <img src={item} />
-            </SlideCard>
+            <FullPageImageSlide key={item.src} image={item} />
           ))}
+          <WhyCrossnoKayeSlide />
         </FullscreenCarousel>
       </main>
     </ThemeProvider>
