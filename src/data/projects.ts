@@ -18,7 +18,7 @@ export const projects: Project[] = [
     title: 'PopboxGPT',
     subtitle: 'An AI Assistant on any page',
     description:
-      'PopboxGPT is an AI assistant that can be used on any website.  It functions as a chrome extension and can be injected into any webpage.  Placed #24th on ProductHunt',
+      'PopboxGPT is an AI assistant that can be used on any website.  It functions as a chrome extension and can be injected into any webpage.  Placed #24th on ProductHunt.',
     image: popboxgptImage,
     link: 'https://popboxgpt.com',
   },
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     title: 'Sidecade',
     subtitle: 'Browser games on any page',
     description:
-      'Sidecade functions as both a chrome extension and a drop in js snippet to add browser games to any website.  Placed #27th on ProductHunt',
+      'Sidecade functions as both a chrome extension and a drop in js snippet to add browser games to any website.  Placed #27th on ProductHunt.',
     image: sidecadeImage,
     link: 'https://sidecade.com',
   },

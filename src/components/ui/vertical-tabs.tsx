@@ -100,37 +100,47 @@ const TabButtonSubtitle = ({ children, className }: TabButtonSubtitleProps) => {
   );
 };
 
-type TabContentHeaderProps = {
+interface TabContentHeaderProps {
   title: string;
   role: string;
   period: string;
   description: string;
-};
+  link?: string;
+}
 
 const TabContentHeader = ({
   title,
   role,
   period,
   description,
+  link,
 }: TabContentHeaderProps) => {
   return (
     <div className={cn('flex flex-col gap-2')}>
-      <div className="space-y-2">
-        <span
-          className="text-lg font-semibold text-gray-800 dark:text-gray-200
+      <span
+        className="text-lg font-semibold text-gray-800 dark:text-gray-200
                     data-[state=active]:text-gray-900 dark:data-[state=active]:text-white"
-        >
-          {title}
-        </span>
-        <div className="flex flex-row justify-between items-center">
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
-            {role}
-          </h3>
-          <p className="text-lg text-gray-600 dark:text-gray-400">{period}</p>
-        </div>
-
-        <p className="text-lg leading-relaxed">{description}</p>
+      >
+        {title}
+      </span>
+      <div className="flex flex-row justify-between items-center">
+        <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+          {role}
+        </h3>
+        <p className="text-lg text-gray-600 dark:text-gray-400">{period}</p>
       </div>
+
+      <p className="text-lg">{description}</p>
+      {link && (
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline"
+        >
+          {link}
+        </a>
+      )}
     </div>
   );
 };

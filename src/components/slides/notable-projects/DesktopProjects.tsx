@@ -37,6 +37,7 @@ export function DesktopProjects({ projects }: DesktopProjectsProps) {
               role={project.subtitle}
               period=""
               description={project.description}
+              link={project.link}
             />
             <div className="relative h-96 w-full rounded-lg border-2 border-gray-200 dark:border-gray-700 overflow-hidden bg-white dark:bg-gray-800">
               <div className="absolute inset-0 flex items-center justify-center">
