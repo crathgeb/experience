@@ -51,7 +51,7 @@ export function ImageDialog({
           <img
             src={src}
             alt={alt}
-            className="max-w-[calc(90vw-3rem)] max-h-[calc(90vh-3rem)] object-contain"
+            className="sm:max-w-[calc(90vw-3rem)] sm:max-h-[calc(90vh-3rem)] object-fill sm:object-contain"
           />
         </div>
       </DialogContent>
