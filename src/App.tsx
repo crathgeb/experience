@@ -7,6 +7,7 @@ import { AboutMeSlide } from '@/components/slides/AboutMeSlide';
 import { WorkExperienceSlide } from '@/components/slides/WorkExperienceSlide';
 import { curemint } from '@/data/images';
 import { FullPageImageSlide } from '@/components/slides/FullPageImageSlide';
+import { WhyCrossnoKayeSlide } from './components/slides/WhyCrossnoKayeSlide';
 
 const projectSlides = curemint();
 
