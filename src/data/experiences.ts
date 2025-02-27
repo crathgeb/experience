@@ -50,7 +50,7 @@ export const experiences = [
     id: 'digitova',
     title: 'Digitova, LLC',
     subtitle: 'Founder - Development Partner',
-    role: 'Pet ',
+    role: 'Founder/Lead Software Engineer',
     period: '2014 - 2020',
     description:
       'Digitova was a partnership based development agency that helped other companies take their product from 0-1 and then build up a transitionary engineering team.',

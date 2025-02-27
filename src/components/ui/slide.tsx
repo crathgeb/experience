@@ -49,7 +49,7 @@ const SlideBody = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      'absolute inset-8 flex items-center justify-center overflow-scroll mt-40 sm:mt-28 hide-scrollbar',
+      'absolute inset-8 flex items-start justify-center overflow-y-auto mt-20 sm:mt-28 hide-scrollbar',
       className
     )}
     {...props}
