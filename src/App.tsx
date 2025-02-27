@@ -8,6 +8,8 @@ import { WorkExperienceSlide } from '@/components/slides/WorkExperienceSlide';
 import { curemint } from '@/data/images';
 import { FullPageImageSlide } from '@/components/slides/FullPageImageSlide';
 import { WhyCrossnoKayeSlide } from './components/slides/WhyCrossnoKayeSlide';
+import { QuestionsSlide } from '@/components/slides/QuestionsSlide';
+import { ThankYouSlide } from '@/components/slides/ThankYouSlide';
 
 const projectSlides = curemint();
 
@@ -26,6 +28,8 @@ function App() {
             <FullPageImageSlide key={item.src} image={item} />
           ))}
           <WhyCrossnoKayeSlide />
+          <QuestionsSlide />
+          <ThankYouSlide />
         </FullscreenCarousel>
       </main>
     </ThemeProvider>
