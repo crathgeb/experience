@@ -24,7 +24,7 @@ export function WhyCrossnoKayeSlide() {
               {[
                 'Mission-driven focus on energy & sustainability',
                 'Innovative technology & real-time control',
-                'Collaborative, interdisciplinary environment',
+                'Aligns well with what I am looking for',
               ].map((item, index) => (
                 <li key={index} className="flex items-center gap-4">
                   <div className="h-2 w-2 rounded-full bg-primary" />
