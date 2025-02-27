@@ -15,7 +15,7 @@ const projectSlides = curemint();
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
       <main className="relative w-full h-screen">
         <div className="absolute top-4 right-4 z-50">
           <ThemeToggle />
