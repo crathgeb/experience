@@ -26,7 +26,11 @@ export function DesktopExperience({ experiences }: DesktopExperienceProps) {
         ))}
       </TabButtons>
       {experiences.map((exp) => (
-        <TabsContent key={exp.id} value={exp.id} className={'tab-content'}>
+        <TabsContent
+          key={exp.id}
+          value={exp.id}
+          className={'tab-content w-full'}
+        >
           <div className="space-y-6">
             <TabContentHeader
               title={exp.title}
